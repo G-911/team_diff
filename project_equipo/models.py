@@ -3,5 +3,6 @@ from django.urls import reverse
 
 # Create your models here.
 
-# class Project(models.Model):
-#     title = models.CharField(max_length=30)
+
+class Post(models.Model):
+    author = models.ForeignKey
