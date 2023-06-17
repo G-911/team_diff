@@ -1,17 +1,14 @@
 {% extends "base.html" %}
 
-<<<<<<< HEAD
 {% block content %}
+
 
     {% for post in post_list %}
         <h2><a href="{% url 'post_detail' post.pk %}">{{ post.tittle }}</a></h2>
         <p>{{ post.author }}</p>
         <p>{{ post.body }}</p>
+        
     {% endfor %}
     
 {% endblock content %}
-=======
-{% block content%}
-    <h1>Login</h1>
-{% endblock content%}
->>>>>>> b9f20d8785654dd7a4e924f18cff01b153b29448
+
