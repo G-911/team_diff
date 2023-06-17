@@ -27,5 +27,5 @@ class ProjectEditView(UpdateView):
 
 class ProjectDeleteView(DeleteView):
     model = Post
-    template_name = "post_delete.html"
+    template_name = "delete_project.html"
     success_url = reverse_lazy("home")

@@ -3,9 +3,9 @@ from .views import ProjectHomePage, ProjectDetailView, ProjectCreateView, Projec
 
 urlpatterns = [
     path("", ProjectHomePage.as_view(), name="home"),
-    path("post/new/", ProjectCreateView.as_view(), name="post_new"),
-    path("post/<int:pk>", ProjectDetailView.as_view(), name="post_detail"),
+    path("post/new/", ProjectCreateView.as_view(), name="NewPost"),
+    path("post/<int:pk>", ProjectDetailView.as_view(), name="DetailPost"),
     path("", ProjectListView.as_view(), name="home"),
     path("post/<int:pk>/edit/", ProjectEditView.as_view(), name="post_edit"),
-    path("post/<int:pk>/delete/", ProjectDeleteView.as_view(), name="post_delete"),
+    path("post/<int:pk>/delete/", ProjectDeleteView.as_view(), name="delete_project"),
 ]
